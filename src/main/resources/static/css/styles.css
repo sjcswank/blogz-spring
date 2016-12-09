@@ -56,6 +56,10 @@ hr {
     font-size: 12px;
 }
 
+.post-time {
+	font-size: 12px;
+}
+
 nav ul {
     padding: 0;
     display: inline-block;

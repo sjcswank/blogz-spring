@@ -5,8 +5,12 @@
 <body>
 
 	<div th:replace="template :: navigation"></div>
-
-	<!-- TODO - display a single blog post -->
+	
+	<div>
+		<h1 th:text="${post.title}"></h1>
+		<p th:text="${post.body}"></p>
+		<p class="post-time">written at <span th:text="${#dates.format(post.created, 'yyyy-MM-dd')}"></span></p>
+	</div>
 
 </body>
 </html>
